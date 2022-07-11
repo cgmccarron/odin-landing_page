@@ -1,6 +1,39 @@
+:root {
+  --dark_blue: #1f2937;
+  --light_blue: #3882f6;
+  --grey: #e5e7eb;
+  --light_text: #f9faf9;
+  --dark_text: #1f2937;
+}
 body {
   font-family: "Roboto", sans-serif;
 }
 #navbar {
-  background-color: #1f2937;
+  background-color: var(--dark_blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  color: var(--light_text);
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+
+#nav_logo {
+  display: grid;
+  overflow: hidden;
+  background-color: var(--dark_blue);
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#nav_logo img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 5rem;
+}
+
+#about_image img {
+  height: 100px;
+  width: 100px;
 }
